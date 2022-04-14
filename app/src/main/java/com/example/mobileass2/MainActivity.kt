@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+  
     fun handleSelection(view: View) {
         Toast.makeText(this, "Image is tapped", Toast.LENGTH_LONG).show()
     }
