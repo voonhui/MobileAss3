@@ -32,33 +32,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //firebase
-        // Write a message to the database
-        val database = Firebase.database("https://mobileassfirebase-default-rtdb.firebaseio.com/")
-        val myRef = database.getReference("Sport")
 
-        myRef.setValue("Hello, World!")
-        myRef.child("first").setValue("tag 1")
-        myRef.child("second").setValue("tag 2")
-        myRef.child("third").setValue("tag 3")
-        myRef.child("fourth").setValue("tag 4")
-        myRef.child("fifth").setValue("tag 5")
-
-        // Read from the database
-        myRef.addValueEventListener(object: ValueEventListener{
-
-            override fun onDataChange(snapshot: DataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-                val value = snapshot.getValue<String>()
-                Log.d(TAG, "Value is: " + value)
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.w(TAG, "Failed to read value.", error.toException())
-            }
-
-        })
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
         navController = navHostFragment.navController
