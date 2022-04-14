@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Sport">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Lose Weight -->
+            <TextView
+                android:id="@+id/textViewLoseWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/lose"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/HorizontalScrollViewLoseWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLoseWeight">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sport_1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport1"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport1"
+                        app:srcCompat="@drawable/sport_2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport2"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport2"
+                        app:srcCompat="@drawable/sport_3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport3"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport3"
+                        app:srcCompat="@drawable/sport_4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!-- Body Focus -->
+            <TextView
+                android:id="@+id/textViewBodyFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/focus"
+                app:layout_constraintStart_toStartOf="@id/textViewLoseWeight"
+                app:layout_constraintTop_toBottomOf="@id/HorizontalScrollViewLoseWeight" />
+
+            <HorizontalScrollView
+                android:id="@+id/HorizontalScrollViewBodyFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewBodyFocus">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sport_5" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport5"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport5"
+                        app:srcCompat="@drawable/sport_6" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport6"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport6"
+                        app:srcCompat="@drawable/sport_7" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport7"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport7"
+                        app:srcCompat="@drawable/sport_8" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!-- Body Relax -->
+            <TextView
+                android:id="@+id/textViewBodyRelax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/relax"
+                app:layout_constraintStart_toStartOf="@id/textViewLoseWeight"
+                app:layout_constraintTop_toBottomOf="@id/HorizontalScrollViewBodyFocus" />
+
+            <HorizontalScrollView
+                android:id="@+id/HorizontalScrollViewBodyRelax"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewBodyRelax">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sport_9" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport9"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport9"
+                        app:srcCompat="@drawable/sport_10" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport10"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport10"
+                        app:srcCompat="@drawable/sport_11" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!-- Body Relax Test-->
+            <TextView
+                android:id="@+id/textViewBodyRelax1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/relax"
+                app:layout_constraintStart_toStartOf="@id/textViewLoseWeight"
+                app:layout_constraintTop_toBottomOf="@id/HorizontalScrollViewBodyRelax" />
+
+            <HorizontalScrollView
+                android:id="@+id/HorizontalScrollViewBodyRelax1"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewBodyRelax1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sport_9" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport12"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport12"
+                        app:srcCompat="@drawable/sport_10" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSport14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/imageButtonSport13"
+                        app:layout_constraintTop_toTopOf="@id/imageButtonSport13"
+                        app:srcCompat="@drawable/sport_11" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

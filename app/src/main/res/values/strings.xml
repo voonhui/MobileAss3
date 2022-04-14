@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MobileAss2</string>
+    <string name="lose">Lose Weight</string>
+    <string name="focus">Body Focus</string>
+    <string name="relax">Body Relax</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
