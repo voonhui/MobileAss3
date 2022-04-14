@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994848696541",
+    "project_id": "mobileassfirebase",
+    "storage_bucket": "mobileassfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994848696541:android:3ded1b9b11fdc39d409334",
+        "android_client_info": {
+          "package_name": "com.example.mobileass2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994848696541-gpad0mvk2noroafk7pjhusevo0ph2ae9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8-wChonFROAt2z1_8rRlq9HMGcGHFA2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994848696541-gpad0mvk2noroafk7pjhusevo0ph2ae9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
