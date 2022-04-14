@@ -3,6 +3,9 @@
     <string name="lose">Lose Weight</string>
     <string name="focus">Body Focus</string>
     <string name="relax">Body Relax</string>
+    <string name="frag_sport">Sport Category</string>
+    <string name="frag_diet">Diet</string>
+    <string name="frag_profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

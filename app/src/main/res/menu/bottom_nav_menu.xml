@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/sport"
+        android:id="@+id/sport_nav"
         android:icon="@drawable/ic_gym00"
         android:title="Sport" />
     <item
-        android:id="@+id/diet"
+        android:id="@+id/diet_nav"
         android:icon="@drawable/ic_vegetables00"
         android:title="Diet" />
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profile_nav"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="Profile" />
 </menu>

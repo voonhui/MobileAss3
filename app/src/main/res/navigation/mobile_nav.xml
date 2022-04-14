@@ -2,21 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/bottom_nav"
-    app:startDestination="@id/sport">
+    android:id="@+id/mobile_nav"
+    app:startDestination="@id/sport_nav">
     <fragment
-        android:id="@+id/sport"
+        android:id="@+id/sport_nav"
         android:name="com.example.mobileass2.Sport"
-        android:label="Sport Category"
+        android:label="@string/frag_sport"
         tools:layout="@layout/fragment_sport" />
     <fragment
-        android:id="@+id/diet"
+        android:id="@+id/diet_nav"
         android:name="com.example.mobileass2.Diet"
-        android:label="Diet"
+        android:label="@string/frag_diet"
         tools:layout="@layout/fragment_diet" />
     <fragment
-        android:id="@+id/profile"
+        android:id="@+id/profile_nav"
         android:name="com.example.mobileass2.Profile"
-        android:label="Profile"
+        android:label="@string/frag_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>
