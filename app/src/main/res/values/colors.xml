@@ -10,4 +10,7 @@
     <color name="bottom_blue">#2e5090</color>
     <color name="bottom_selected_item">#FFFFFFFF</color>
     <color name="bottom_item">#9FA8DA</color>
+    <color name="yinmnBlue_200">#617cc1</color>
+    <color name="yinmnBlue_500">#2e5090</color>
+    <color name="yinmnBlue_700">#002862</color>
 </resources>
