@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="18dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/diet_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/breakfast_1"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/diet_img">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:maxLines="1"
+            android:singleLine="false"
+            android:text="Easy Dinners For A Busy Summer"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/views"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="110"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/text_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/views"
+                    android:layout_marginLeft="55dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
