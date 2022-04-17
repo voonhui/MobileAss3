@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sport.SportHiit">
+
+
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:id="@+id/ScrollViewHiit"
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewHiit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sport_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewIntro1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Introduction"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewHiit" />
+
+            <TextView
+                android:id="@+id/textViewHiit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:text="A HIIT workout consists of short bouts of intense work lasting anywhere from 10 to 60 seconds, followed immediately by a period of active recovery of the same length or longer."
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIntro1" />
+
+            <ImageView
+                android:id="@+id/imageViewSquat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sport_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHiit" />
+
+            <TextView
+                android:id="@+id/textViewW11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/squat"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewSquat1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewSquat1" />
+
+            <TextView
+                android:id="@+id/textViewT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="00 : 30"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewSquat1"
+                app:layout_constraintStart_toEndOf="@+id/imageViewSquat1" />
+
+            <ImageView
+                android:id="@+id/imageViewCrunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sport_36"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewT1" />
+
+            <TextView
+                android:id="@+id/textViewW12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/crunch"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCrunch"
+                app:layout_constraintTop_toTopOf="@+id/imageViewCrunch" />
+
+            <TextView
+                android:id="@+id/textViewT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="00 : 30"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewCrunch"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCrunch" />
+
+            <ImageView
+                android:id="@+id/imageViewScissor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sport_37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewT2" />
+
+            <TextView
+                android:id="@+id/textViewW13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/scissorkick"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewScissor"
+                app:layout_constraintTop_toTopOf="@+id/imageViewScissor" />
+
+            <TextView
+                android:id="@+id/textViewT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="00 : 30"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewScissor"
+                app:layout_constraintStart_toEndOf="@+id/imageViewScissor" />
+
+            <ImageView
+                android:id="@+id/imageViewMountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sport_38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewT3" />
+
+            <TextView
+                android:id="@+id/textViewW14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/mountainclimb"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewMountain"
+                app:layout_constraintTop_toTopOf="@+id/imageViewMountain" />
+
+            <TextView
+                android:id="@+id/textViewT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="00 : 30"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewMountain"
+                app:layout_constraintStart_toEndOf="@+id/imageViewMountain" />
+
+            <ImageView
+                android:id="@+id/imageViewInchWorm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sport_38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewT4" />
+
+            <TextView
+                android:id="@+id/textViewW15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/inchworm"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewInchWorm"
+                app:layout_constraintTop_toTopOf="@+id/imageViewInchWorm" />
+
+            <TextView
+                android:id="@+id/textViewT5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="00 : 30"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewInchWorm"
+                app:layout_constraintStart_toEndOf="@+id/imageViewInchWorm" />
+
+            <ImageView
+                android:id="@+id/imageViewButtKick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/sport_39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewT5" />
+
+            <TextView
+                android:id="@+id/textViewW16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/buttkick"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageViewButtKick"
+                app:layout_constraintTop_toTopOf="@+id/imageViewButtKick" />
+
+            <TextView
+                android:id="@+id/textViewT6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="00 : 30"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewButtKick"
+                app:layout_constraintStart_toEndOf="@+id/imageViewButtKick" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonStart1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollViewHiit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
