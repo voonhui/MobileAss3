@@ -28,6 +28,8 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/lose"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,6 +75,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="@string/focus"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@id/textViewLoseWeight"
                 app:layout_constraintTop_toBottomOf="@id/HorizontalScrollViewLoseWeight" />
 
@@ -130,6 +134,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="@string/relax"
+                android:textColor="@color/black"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@id/textViewLoseWeight"
                 app:layout_constraintTop_toBottomOf="@id/HorizontalScrollViewBodyFocus" />
 
