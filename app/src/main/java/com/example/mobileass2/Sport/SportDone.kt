@@ -32,9 +32,7 @@ class SportDone : Fragment() {
         val pressedRef = rootRef.child("Total Sport Completed")
 
         buttonFinish = view.findViewById(R.id.buttonFinish)
-        val textViewSport: TextView = view.findViewById(R.id.editTextCalories)
 
-        textViewSport.setText("380 kcal")
 
         buttonFinish.setOnClickListener{
 

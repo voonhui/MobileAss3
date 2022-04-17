@@ -45,7 +45,7 @@ class DietAdapter (private var dietItem: MutableList<dietItem>):RecyclerView.Ada
                val activity=p0!!.context as AppCompatActivity
                val d = DietDetailsFragment()
                 d.arguments = bundle
-               activity.supportFragmentManager.beginTransaction().replace(R.id.dietF,d,null).addToBackStack(null).commit()
+               activity.supportFragmentManager.beginTransaction().replace(R.id.dietF,d).addToBackStack(null).commit()
 
             }
 
