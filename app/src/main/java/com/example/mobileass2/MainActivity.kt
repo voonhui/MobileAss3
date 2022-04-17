@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -36,12 +37,6 @@ class MainActivity : AppCompatActivity() {
         val database = Firebase.database("https://mobileassfirebase-default-rtdb.firebaseio.com/")
         val myRef = database.getReference("Sport")
 
-        myRef.setValue("Hello, World!")
-        myRef.child("first").setValue("tag 1")
-        myRef.child("second").setValue("tag 2")
-        myRef.child("third").setValue("tag 3")
-        myRef.child("fourth").setValue("tag 4")
-        myRef.child("fifth").setValue("tag 5")
 
         // Read from the database
         myRef.addValueEventListener(object: ValueEventListener {
