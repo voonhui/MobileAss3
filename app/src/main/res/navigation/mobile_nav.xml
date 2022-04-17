@@ -6,9 +6,32 @@
     app:startDestination="@id/sport_nav">
     <fragment
         android:id="@+id/sport_nav"
-        android:name="com.example.mobileass2.Sport"
+        android:name="com.example.mobileass2.Sport.Sport"
         android:label="@string/frag_sport"
-        tools:layout="@layout/fragment_sport" />
+        tools:layout="@layout/fragment_sport" >
+        <action
+            android:id="@+id/action_sport_nav_to_sportHiit"
+            app:destination="@id/sportHiit" />
+        <action
+            android:id="@+id/action_sport_nav_to_sportActivity2"
+            app:destination="@id/sportActivity2"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_sport_nav_to_sportFocusBody"
+            app:destination="@id/sportFocusBody" />
+        <action
+            android:id="@+id/action_sport_nav_to_sportArm"
+            app:destination="@id/sportArm" />
+        <action
+            android:id="@+id/action_sport_nav_to_sportLeg"
+            app:destination="@id/sportLeg" />
+        <action
+            android:id="@+id/action_sport_nav_to_sportLeg2"
+            app:destination="@id/sportLeg" />
+        <action
+            android:id="@+id/action_sport_nav_to_sportBodyRelax2"
+            app:destination="@id/sportBodyRelax2" />
+    </fragment>
     <fragment
         android:id="@+id/diet_nav"
         android:name="com.example.mobileass2.Diet"
@@ -19,4 +42,106 @@
         android:name="com.example.mobileass2.Profile"
         android:label="@string/frag_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/sportActivity2"
+        android:name="com.example.mobileass2.Sport.SportActivity"
+        android:label="7 Min Workout"
+        tools:layout="@layout/fragment_sport_activity" >
+        <action
+            android:id="@+id/action_sportActivity2_to_sport_nav"
+            app:destination="@id/sport_nav"
+            app:popUpTo="@id/sport_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sportActivity2_to_sportStart"
+            app:destination="@id/sportStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportStart"
+        android:name="com.example.mobileass2.Sport.SportStart"
+        android:label="Workout Start"
+        tools:layout="@layout/fragment_sport_start" >
+        <action
+            android:id="@+id/action_sportStart_to_sportDone"
+            app:destination="@id/sportDone" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportDone"
+        android:name="com.example.mobileass2.Sport.SportDone"
+        android:label="Well Done"
+        tools:layout="@layout/fragment_sport_done" >
+        <action
+            android:id="@+id/action_sportDone_to_sport_nav"
+            app:destination="@id/sport_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportHiit"
+        android:name="com.example.mobileass2.Sport.SportHiit"
+        android:label="HIIT"
+        tools:layout="@layout/fragment_sport_hiit" >
+        <action
+            android:id="@+id/action_sportHiit_to_sport_nav"
+            app:destination="@id/sport_nav"
+            app:popUpTo="@id/sport_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sportHiit_to_sportStart"
+            app:destination="@id/sportStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportFocusBody"
+        android:name="com.example.mobileass2.Sport.SportFocusBody"
+        android:label="Waist"
+        tools:layout="@layout/fragment_sport_focus_body" >
+        <action
+            android:id="@+id/action_sportFocusBody_to_sport_nav"
+            app:destination="@id/sport_nav"
+            app:popUpTo="@id/sport_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sportFocusBody_to_sportStart"
+            app:destination="@id/sportStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportArm"
+        android:name="com.example.mobileass2.Sport.SportArm"
+        android:label="Arm"
+        tools:layout="@layout/fragment_sport_arm" >
+        <action
+            android:id="@+id/action_sportArm_to_sport_nav"
+            app:destination="@id/sport_nav"
+            app:popUpTo="@id/sport_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sportArm_to_sportStart"
+            app:destination="@id/sportStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportLeg"
+        android:name="com.example.mobileass2.Sport.SportLeg"
+        android:label="Butt and Leg"
+        tools:layout="@layout/fragment_sport_leg" >
+        <action
+            android:id="@+id/action_sportLeg_to_sport_nav"
+            app:destination="@id/sport_nav"
+            app:popUpTo="@id/sport_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sportLeg_to_sportStart"
+            app:destination="@id/sportStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportBodyRelax2"
+        android:name="com.example.mobileass2.Sport.SportBodyRelax"
+        android:label="Full Body Stretching"
+        tools:layout="@layout/fragment_sport_body_relax" >
+        <action
+            android:id="@+id/action_sportBodyRelax2_to_sport_nav"
+            app:destination="@id/sport_nav"
+            app:popUpTo="@id/sport_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sportBodyRelax2_to_sportStart"
+            app:destination="@id/sportStart" />
+    </fragment>
 </navigation>
